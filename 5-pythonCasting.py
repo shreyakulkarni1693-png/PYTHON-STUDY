@@ -159,3 +159,38 @@ print(a.replace("l", "q"))
 
 a= "hello my name is shreya"
 print(a.split("my"))
+
+
+# string concatenation
+# to combine use + operator
+
+a= "shreya "
+b="kulkarni" 
+c= a+b
+print(c)
+
+
+#string format
+
+age= 32
+# print( "my age is "+age) # give error
+
+#but we can combine number and string by using format()
+# f-string introduced in python 3.6
+
+age= 32
+txt= f"my age is {age}"
+print (txt)
+
+
+#placeholder and modifires
+
+price=90
+txt=f" value of doll is {price} dollars"
+print(txt)
+
+#placeholder can include a modifier to format the value
+
+price =80
+txt=f" value of dall is {price:2f} dollars"
+print(txt)
