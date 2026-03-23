@@ -194,3 +194,50 @@ print(txt)
 price =80
 txt=f" value of dall is {price:2f} dollars"
 print(txt)
+
+
+# Escape character
+#to insert character that are illegal
+
+#txt= "we are happy to study"python"and  i love to do it" '''
+#gives syntax error because of "python" in the string
+# we can use escape character \ to fix this
+
+txt="we happy to study\"python\" and i love it"
+print(txt)
+
+
+#other escape characters
+
+#single quote (')
+txt="my name is \'shreya\' i am 32 yrs old "
+print(txt)
+
+#backslash(\\)
+txt="my name is \\shreya\\ i am 32 years old ."
+print(txt)
+
+#new line(\n)
+txt=" my name is shreya\n i am 32 yrs old."
+print(txt)
+
+#carriage return(\r)
+txt="my name is shreya\r i am 32 yrs old."
+print(txt)
+
+#tab(\t)
+txt="my name is shreya\t i am 32 yrs old."
+print(txt)
+
+#backspace(\b)
+txt="my name is shre\b i am 32 yrs old."
+print(txt)
+
+
+#octal value(\ooo)
+txt="my name is shreya\117 i am 32 yrs old."
+print(txt)
+
+#hex value(\xhh)
+txt="my name is shreya\x4f i am 32 yrs old."    
+print(txt)
