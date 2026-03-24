@@ -41,3 +41,47 @@ print(a.format("tommy"))
 #index() returns the index of first occurence of specified value
 a= "hello world"
 print(a.index("w"))
+
+#isalnum() returns true if all characters in the string are alphanumeric
+a="hello world 123456"
+print(a.isalnum())
+
+#boolean
+
+a=200
+b=100
+if a<b:
+ print("true")
+else:
+ print("false") 
+
+
+ print(10==9)
+
+ print(bool("shreya"))
+ print(bool(23))
+ print(bool())
+ print(bool(0))
+
+class myclass():
+  def _len_(self):
+   return 0
+  
+myobj= myclass()
+print(bool(myobj))  
+
+
+def myfunction():
+ return False
+
+print(myfunction())
+
+def myFunction():
+ return True
+if myFunction():
+ print("YES !")
+else:
+ print("NO !")
+ 
+x=200
+print(isinstance(x,str))
