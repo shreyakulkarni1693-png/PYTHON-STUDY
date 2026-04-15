@@ -160,4 +160,130 @@ thislist=["apple","kiwi","banana"]
 i=0
 while i<len(thislist):
     print(thislist[i])
-    i=i+1
+    i=i+1 
+
+# looping using list comprehension
+
+fruits=["apple","kiwi","banana","mango"]
+newfruits=[]
+
+for x in fruits:
+    if "a" in x:
+        newfruits.append(x)
+print(newfruits)        
+
+#same we can do with list comprehension
+fruits=["apple","kiwi","banana","mango"]
+newfruit=[x for x in fruits if "a"in x]
+
+print(newfruit)
+
+
+#newlist = [expression for item in iterable if condition == True]
+
+#eg. accept fruits that are not apple
+
+fruits=["apple","kiwi","banana","mango"]
+newlist=[ x for x in fruits if x != "apple"]
+
+print(newlist)
+
+# eg. with no if statement
+fruits=["apple","kiwi","banana","mango"]
+newlist=[ x for x in fruits]
+
+print(newlist)
+
+
+# we can use range() to create an iterable
+
+newlist=[ x for x in range(10)]
+print(newlist)
+
+newlist=[x for x in range(10)if x < 5]
+print(newlist)
+
+fruits=["apple","kiwi","banana","mango"]
+newlist=[x.upper() for x in fruits ]
+
+print(newlist)
+
+# we can set all value to "hello"
+fruits=["apple","kiwi","banana","mango"]
+newlist=["hello" for x in fruits ]
+print(newlist)
+
+fruits=["apple","kiwi","banana","mango"]
+newlist=[x if x!= "banana"else "orange" for x in fruits]
+
+print(newlist)
+
+
+fruits=["apple","banana","mango"]
+newlist=[x for x in fruits if x=="banana"]
+print(newlist)
+
+
+
+# Sort list alphanumerically use sort() method
+
+
+newlist=["apple","kiwi","banana","mango"]
+newlist.sort()
+print(newlist)
+
+
+num=[100, 46 , 23, 1, -3, 67]
+num.sort()
+print(num)
+
+# sorting in decending order
+num=[100, 46 , 23, 1, -3, 67]
+num.sort(reverse=True)
+print(num)
+
+
+#customize sort using key= function
+
+def myfunc(n):
+    return abs(n-50)
+thislist=[100, 50,65, 82,23]
+thislist.sort(key=myfunc)
+print(thislist)
+
+
+# case sensitive sort 
+#sort()is case sensitive all capital letters sorted first
+
+
+fruits=["Banana","kiwi","Mango","apple"]
+fruits.sort()
+print(fruits)   #['Banana', 'Mango', 'apple', 'kiwi']
+
+# if you want a case-insensitive sort function, use str.lower as a key function:
+
+
+fruits=["Banana","kiwi","Mango","apple"]
+fruits.sort(key=str.lower)
+print(fruits)      #['apple', 'Banana', 'kiwi', 'Mango']
+
+
+# reverse()
+
+fruits=["Banana","kiwi","Mango","apple"]
+fruits.reverse()
+print(fruits)  #['apple', 'Mango', 'kiwi', 'Banana']
+
+
+# reverse()
+
+fruits=["Banana","kiwi","Mango","apple"]
+fruits.reverse()
+print(fruits)  #['apple', 'Mango', 'kiwi', 'Banana']
+
+# reverse()
+
+fruits=["Banana","kiwi","Mango","apple"]
+fruits.reverse()
+print(fruits)  #['apple', 'Mango', 'kiwi', 'Banana']
+
